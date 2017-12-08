@@ -24,7 +24,7 @@ namespace FTPServerWorker
 
             _server.NewConnection += ServerNewConnection;
             _server.UserLogoutEvent += ServerLogoutEvent;
-            _server.errorHandler += ErrorHandle;
+            _server.ErrorHandler += ErrorHandle;
 
             return base.OnStart();
         }
